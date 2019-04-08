@@ -82,7 +82,7 @@ public class Ejercicio3 extends JFrame{
 				try {
 					Ejercicio3 frame = new Ejercicio3();
 					frame.setVisible(true);
-					frame.setSize(500,300);
+					frame.setSize(450,300);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

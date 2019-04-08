@@ -21,7 +21,7 @@ import javax.swing.JTextField;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class Ejercicio1 extends JFrame {
+public class App extends JFrame {
 
 	/**
 	 * 
@@ -43,7 +43,7 @@ public class Ejercicio1 extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Ejercicio1 frame = new Ejercicio1();
+					App frame = new App();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -55,7 +55,7 @@ public class Ejercicio1 extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Ejercicio1() {
+	public App() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
