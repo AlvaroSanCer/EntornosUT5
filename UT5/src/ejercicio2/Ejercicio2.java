@@ -52,9 +52,9 @@ public class Ejercicio2 extends JFrame {
 	 */
 	public Ejercicio2() {
 		GridBagLayout gridBagLayout = new GridBagLayout();
-		gridBagLayout.columnWidths = new int[]{85, 136, 58, 109, 0};
-		gridBagLayout.rowHeights = new int[]{20, 36, 20, 20, 20, 22, 44, 23, 0};
-		gridBagLayout.columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
+		gridBagLayout.columnWidths = new int[]{80, 107, 4, 53, 109, 0};
+		gridBagLayout.rowHeights = new int[]{20, 41, 20, 20, 20, 22, 49, 23, 0};
+		gridBagLayout.columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
 		gridBagLayout.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
 		getContentPane().setLayout(gridBagLayout);
 		
@@ -64,7 +64,7 @@ public class Ejercicio2 extends JFrame {
 		gbc_lblCompreAlgoAhora.anchor = GridBagConstraints.NORTH;
 		gbc_lblCompreAlgoAhora.fill = GridBagConstraints.HORIZONTAL;
 		gbc_lblCompreAlgoAhora.insets = new Insets(0, 0, 5, 5);
-		gbc_lblCompreAlgoAhora.gridwidth = 2;
+		gbc_lblCompreAlgoAhora.gridwidth = 3;
 		gbc_lblCompreAlgoAhora.gridx = 1;
 		gbc_lblCompreAlgoAhora.gridy = 0;
 		getContentPane().add(lblCompreAlgoAhora, gbc_lblCompreAlgoAhora);
@@ -82,7 +82,7 @@ public class Ejercicio2 extends JFrame {
 		gbc_textField_3.anchor = GridBagConstraints.NORTH;
 		gbc_textField_3.fill = GridBagConstraints.HORIZONTAL;
 		gbc_textField_3.insets = new Insets(0, 0, 5, 0);
-		gbc_textField_3.gridwidth = 3;
+		gbc_textField_3.gridwidth = 4;
 		gbc_textField_3.gridx = 1;
 		gbc_textField_3.gridy = 2;
 		getContentPane().add(textField_3, gbc_textField_3);
@@ -101,7 +101,7 @@ public class Ejercicio2 extends JFrame {
 		gbc_textField_4.anchor = GridBagConstraints.NORTH;
 		gbc_textField_4.fill = GridBagConstraints.HORIZONTAL;
 		gbc_textField_4.insets = new Insets(0, 0, 5, 0);
-		gbc_textField_4.gridwidth = 3;
+		gbc_textField_4.gridwidth = 4;
 		gbc_textField_4.gridx = 1;
 		gbc_textField_4.gridy = 3;
 		getContentPane().add(textField_4, gbc_textField_4);
@@ -128,7 +128,7 @@ public class Ejercicio2 extends JFrame {
 		GridBagConstraints gbc_lblProvincia = new GridBagConstraints();
 		gbc_lblProvincia.fill = GridBagConstraints.HORIZONTAL;
 		gbc_lblProvincia.insets = new Insets(0, 0, 5, 5);
-		gbc_lblProvincia.gridx = 2;
+		gbc_lblProvincia.gridx = 3;
 		gbc_lblProvincia.gridy = 4;
 		getContentPane().add(lblProvincia, gbc_lblProvincia);
 		
@@ -137,7 +137,7 @@ public class Ejercicio2 extends JFrame {
 		gbc_textField_6.anchor = GridBagConstraints.NORTH;
 		gbc_textField_6.fill = GridBagConstraints.HORIZONTAL;
 		gbc_textField_6.insets = new Insets(0, 0, 5, 0);
-		gbc_textField_6.gridx = 3;
+		gbc_textField_6.gridx = 4;
 		gbc_textField_6.gridy = 4;
 		getContentPane().add(textField_6, gbc_textField_6);
 		textField_6.setColumns(10);
@@ -155,14 +155,14 @@ public class Ejercicio2 extends JFrame {
 		GridBagConstraints gbc_comboBox = new GridBagConstraints();
 		gbc_comboBox.anchor = GridBagConstraints.NORTHWEST;
 		gbc_comboBox.insets = new Insets(0, 0, 5, 5);
+		gbc_comboBox.gridwidth = 2;
 		gbc_comboBox.gridx = 1;
 		gbc_comboBox.gridy = 5;
 		getContentPane().add(comboBox, gbc_comboBox);
 		
 		JButton btnNewButton = new JButton("Aceptar");
 		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
-		gbc_btnNewButton.anchor = GridBagConstraints.NORTH;
-		gbc_btnNewButton.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnNewButton.anchor = GridBagConstraints.NORTHEAST;
 		gbc_btnNewButton.insets = new Insets(0, 0, 0, 5);
 		gbc_btnNewButton.gridx = 1;
 		gbc_btnNewButton.gridy = 7;
@@ -171,7 +171,7 @@ public class Ejercicio2 extends JFrame {
 		JButton btnNewButton_1 = new JButton("Cancelar");
 		GridBagConstraints gbc_btnNewButton_1 = new GridBagConstraints();
 		gbc_btnNewButton_1.anchor = GridBagConstraints.NORTHWEST;
-		gbc_btnNewButton_1.gridwidth = 2;
+		gbc_btnNewButton_1.gridwidth = 3;
 		gbc_btnNewButton_1.gridx = 2;
 		gbc_btnNewButton_1.gridy = 7;
 		getContentPane().add(btnNewButton_1, gbc_btnNewButton_1);
