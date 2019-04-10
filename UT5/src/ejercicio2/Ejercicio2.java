@@ -51,130 +51,65 @@ public class Ejercicio2 extends JFrame {
 	 * Create the frame.
 	 */
 	public Ejercicio2() {
-		GridBagLayout gridBagLayout = new GridBagLayout();
-		gridBagLayout.columnWidths = new int[]{80, 107, 4, 53, 109, 0};
-		gridBagLayout.rowHeights = new int[]{20, 41, 20, 20, 20, 22, 49, 23, 0};
-		gridBagLayout.columnWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
-		gridBagLayout.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
-		getContentPane().setLayout(gridBagLayout);
+		getContentPane().setLayout(null);
 		
-		JLabel lblCompreAlgoAhora = new JLabel("COMPRE ALGO AHORA");
+		JLabel lblCompreAlgoAhora = new JLabel("Compre algo ahora");
+		lblCompreAlgoAhora.setBounds(149, 11, 191, 20);
 		lblCompreAlgoAhora.setFont(new Font("Tahoma", Font.BOLD, 16));
-		GridBagConstraints gbc_lblCompreAlgoAhora = new GridBagConstraints();
-		gbc_lblCompreAlgoAhora.anchor = GridBagConstraints.NORTH;
-		gbc_lblCompreAlgoAhora.fill = GridBagConstraints.HORIZONTAL;
-		gbc_lblCompreAlgoAhora.insets = new Insets(0, 0, 5, 5);
-		gbc_lblCompreAlgoAhora.gridwidth = 3;
-		gbc_lblCompreAlgoAhora.gridx = 1;
-		gbc_lblCompreAlgoAhora.gridy = 0;
-		getContentPane().add(lblCompreAlgoAhora, gbc_lblCompreAlgoAhora);
+		getContentPane().add(lblCompreAlgoAhora);
 		
 		JLabel lblNombre = new JLabel("Nombre:");
-		GridBagConstraints gbc_lblNombre = new GridBagConstraints();
-		gbc_lblNombre.anchor = GridBagConstraints.WEST;
-		gbc_lblNombre.insets = new Insets(0, 0, 5, 5);
-		gbc_lblNombre.gridx = 0;
-		gbc_lblNombre.gridy = 2;
-		getContentPane().add(lblNombre, gbc_lblNombre);
+		lblNombre.setBounds(29, 69, 65, 14);
+		getContentPane().add(lblNombre);
 		
 		textField_3 = new JTextField();
-		GridBagConstraints gbc_textField_3 = new GridBagConstraints();
-		gbc_textField_3.anchor = GridBagConstraints.NORTH;
-		gbc_textField_3.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_3.insets = new Insets(0, 0, 5, 0);
-		gbc_textField_3.gridwidth = 4;
-		gbc_textField_3.gridx = 1;
-		gbc_textField_3.gridy = 2;
-		getContentPane().add(textField_3, gbc_textField_3);
+		textField_3.setBounds(121, 66, 288, 20);
+		getContentPane().add(textField_3);
 		textField_3.setColumns(10);
 		
 		JLabel lblDireccion = new JLabel("Direccion: ");
-		GridBagConstraints gbc_lblDireccion = new GridBagConstraints();
-		gbc_lblDireccion.anchor = GridBagConstraints.WEST;
-		gbc_lblDireccion.insets = new Insets(0, 0, 5, 5);
-		gbc_lblDireccion.gridx = 0;
-		gbc_lblDireccion.gridy = 3;
-		getContentPane().add(lblDireccion, gbc_lblDireccion);
+		lblDireccion.setBounds(28, 94, 65, 14);
+		getContentPane().add(lblDireccion);
 		
 		textField_4 = new JTextField();
-		GridBagConstraints gbc_textField_4 = new GridBagConstraints();
-		gbc_textField_4.anchor = GridBagConstraints.NORTH;
-		gbc_textField_4.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_4.insets = new Insets(0, 0, 5, 0);
-		gbc_textField_4.gridwidth = 4;
-		gbc_textField_4.gridx = 1;
-		gbc_textField_4.gridy = 3;
-		getContentPane().add(textField_4, gbc_textField_4);
+		textField_4.setBounds(121, 91, 288, 20);
+		getContentPane().add(textField_4);
 		textField_4.setColumns(10);
 		
 		JLabel lblCiudad_1 = new JLabel("Ciudad:");
-		GridBagConstraints gbc_lblCiudad_1 = new GridBagConstraints();
-		gbc_lblCiudad_1.anchor = GridBagConstraints.WEST;
-		gbc_lblCiudad_1.insets = new Insets(0, 0, 5, 5);
-		gbc_lblCiudad_1.gridx = 0;
-		gbc_lblCiudad_1.gridy = 4;
-		getContentPane().add(lblCiudad_1, gbc_lblCiudad_1);
+		lblCiudad_1.setBounds(29, 119, 54, 14);
+		getContentPane().add(lblCiudad_1);
 		
 		textField_5 = new JTextField();
-		GridBagConstraints gbc_textField_5 = new GridBagConstraints();
-		gbc_textField_5.anchor = GridBagConstraints.NORTHWEST;
-		gbc_textField_5.insets = new Insets(0, 0, 5, 5);
-		gbc_textField_5.gridx = 1;
-		gbc_textField_5.gridy = 4;
-		getContentPane().add(textField_5, gbc_textField_5);
+		textField_5.setBounds(121, 116, 86, 20);
+		getContentPane().add(textField_5);
 		textField_5.setColumns(10);
 		
 		JLabel lblProvincia = new JLabel("Provincia: ");
-		GridBagConstraints gbc_lblProvincia = new GridBagConstraints();
-		gbc_lblProvincia.fill = GridBagConstraints.HORIZONTAL;
-		gbc_lblProvincia.insets = new Insets(0, 0, 5, 5);
-		gbc_lblProvincia.gridx = 3;
-		gbc_lblProvincia.gridy = 4;
-		getContentPane().add(lblProvincia, gbc_lblProvincia);
+		lblProvincia.setBounds(217, 119, 73, 14);
+		getContentPane().add(lblProvincia);
 		
 		textField_6 = new JTextField();
-		GridBagConstraints gbc_textField_6 = new GridBagConstraints();
-		gbc_textField_6.anchor = GridBagConstraints.NORTH;
-		gbc_textField_6.fill = GridBagConstraints.HORIZONTAL;
-		gbc_textField_6.insets = new Insets(0, 0, 5, 0);
-		gbc_textField_6.gridx = 4;
-		gbc_textField_6.gridy = 4;
-		getContentPane().add(textField_6, gbc_textField_6);
+		textField_6.setBounds(300, 116, 109, 20);
+		getContentPane().add(textField_6);
 		textField_6.setColumns(10);
 		
 		JLabel lblFormaDePago = new JLabel("Forma de pago:");
-		GridBagConstraints gbc_lblFormaDePago = new GridBagConstraints();
-		gbc_lblFormaDePago.fill = GridBagConstraints.HORIZONTAL;
-		gbc_lblFormaDePago.insets = new Insets(0, 0, 5, 5);
-		gbc_lblFormaDePago.gridx = 0;
-		gbc_lblFormaDePago.gridy = 5;
-		getContentPane().add(lblFormaDePago, gbc_lblFormaDePago);
+		lblFormaDePago.setBounds(27, 144, 94, 14);
+		getContentPane().add(lblFormaDePago);
 		
 		JComboBox comboBox = new JComboBox();
+		comboBox.setBounds(121, 140, 86, 22);
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"PayPal", "Transferencia bancaria"}));
-		GridBagConstraints gbc_comboBox = new GridBagConstraints();
-		gbc_comboBox.anchor = GridBagConstraints.NORTHWEST;
-		gbc_comboBox.insets = new Insets(0, 0, 5, 5);
-		gbc_comboBox.gridwidth = 2;
-		gbc_comboBox.gridx = 1;
-		gbc_comboBox.gridy = 5;
-		getContentPane().add(comboBox, gbc_comboBox);
+		getContentPane().add(comboBox);
 		
 		JButton btnNewButton = new JButton("Aceptar");
-		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
-		gbc_btnNewButton.anchor = GridBagConstraints.NORTHEAST;
-		gbc_btnNewButton.insets = new Insets(0, 0, 0, 5);
-		gbc_btnNewButton.gridx = 1;
-		gbc_btnNewButton.gridy = 7;
-		getContentPane().add(btnNewButton, gbc_btnNewButton);
+		btnNewButton.setBounds(158, 217, 89, 23);
+		getContentPane().add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("Cancelar");
-		GridBagConstraints gbc_btnNewButton_1 = new GridBagConstraints();
-		gbc_btnNewButton_1.anchor = GridBagConstraints.NORTHWEST;
-		gbc_btnNewButton_1.gridwidth = 3;
-		gbc_btnNewButton_1.gridx = 2;
-		gbc_btnNewButton_1.gridy = 7;
-		getContentPane().add(btnNewButton_1, gbc_btnNewButton_1);
+		btnNewButton_1.setBounds(273, 217, 94, 23);
+		getContentPane().add(btnNewButton_1);
 
 }
 
