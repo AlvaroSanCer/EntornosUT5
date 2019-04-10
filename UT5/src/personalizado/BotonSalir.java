@@ -20,7 +20,7 @@ public class BotonSalir extends JButton {
 		setFont(new Font("Comic Sans MS", Font.BOLD, 14));
 		setBackground(Color.BLACK);
 		setForeground(Color.YELLOW);
-		setText("Salir");
+		setText("Salirr");
 	}
 
 	public Font getThisFont() {
