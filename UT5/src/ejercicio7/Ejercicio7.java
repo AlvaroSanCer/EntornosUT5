@@ -7,13 +7,20 @@ import java.awt.EventQueue;
 
 import javax.swing.JPanel;
 
+import ejemplos.ejemploMenus.Menus;
 import ejercicio3.Ejercicio3;
 
 import java.awt.BorderLayout;
+
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
+
 import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.SwingConstants;
 
 public class Ejercicio7 extends JFrame {
 	public Ejercicio7() {
@@ -23,8 +30,14 @@ public class Ejercicio7 extends JFrame {
 			
 			JPanel panel2 = new JPanel();
 			panel2.setBackground(Color.CYAN);
-			panel2.setBounds(0, 111, 226, 234);
+			panel2.setBounds(0, 111, 226, 164);
 			getContentPane().add(panel2);
+			
+			final JLabel lblNewLabel = new JLabel("");
+			lblNewLabel.setVerticalAlignment(SwingConstants.BOTTOM);
+			lblNewLabel.setIcon(new ImageIcon(Menus.class.getResource("/ejercicio7/imagenes/man.png")));
+			
+			panel2.add(lblNewLabel);
 		
 		JPanel panel1 = new JPanel();
 		panel1.setBackground(Color.CYAN);
@@ -37,10 +50,21 @@ public class Ejercicio7 extends JFrame {
 		lblSeleccioneUnaOpcin.setBounds(30, 21, 186, 27);
 		panel1.add(lblSeleccioneUnaOpcin);
 		
-		JComboBox comboBox = new JComboBox();
+		
+		final JComboBox comboBox = new JComboBox();
+		comboBox.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(comboBox.getSelectedItem().equals("Hombre")){
+					lblNewLabel.setIcon(new ImageIcon(Menus.class.getResource("/ejercicio7/imagenes/man1.png")));
+				}
+				else if (comboBox.getSelectedItem().equals("Mujer") ){
+					lblNewLabel.setIcon(new ImageIcon(Menus.class.getResource("/ejercicio7/imagenes/user_female.png")));
+				}
+			}
+		});
 		comboBox.setBackground(Color.GRAY);
-		comboBox.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Hombre", "Mujer"}));
+		comboBox.setFont(new Font("Arial", Font.BOLD, 15));
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"-", "Hombre", "Mujer"}));
 		comboBox.setBounds(30, 59, 151, 45);
 		panel1.add(comboBox);
 	}
@@ -50,7 +74,8 @@ public class Ejercicio7 extends JFrame {
 			try {
 				Ejercicio7 frame = new Ejercicio7();
 				frame.setVisible(true);
-				frame.setSize(250,500);
+				frame.setSize(250,330);
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
